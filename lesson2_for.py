@@ -1,9 +1,9 @@
 import random
 
-school_classes = ['1a', '1b', '1c', '2a', '2b', '2c']
+school_classes = ['1a', '1b', '1c', '2a', '2b', '2c', '3a', '3b', '3c']
 school_all_classes_score = []
 for school_class in school_classes:
-    scores = [random.randrange(1, 6, 1) for score in range(5)]
+    scores = [random.randrange(1, 10, 1) for score in range(5)]
     school_class_dict = {'school_class' : school_class, 'scores' : scores}
     school_all_classes_score.append(school_class_dict)
 
